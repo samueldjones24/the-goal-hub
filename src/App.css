@@ -3,13 +3,31 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.bg {
+  background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/03/73/20/0557b9c92034b39.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+h1 {
+  font-size: 45px;
+  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 1px 0 #2c2c2c, 0 2px 0 #2a2a2a, 0 2px 0 #282828, 0 3px 0 #262626, 0 2px 0 #242424, 0 4px 0 #222, 0 5px 0 #202020, 0 5px 0 #1e1e1e, 0 8px 0 #1c1c1c, 0 9px 0 #1a1a1a, 0 10px 0 #181818, 0 10px 0 #161616, 0 10px 0 #141414, 0 10px 0 #121212, 0 10px 10px rgba(0,0,0,0.9);
+  padding: 5px;
+  margin: 0px;
+}
+
+img {
+  border-radius: 50%;
 }
 

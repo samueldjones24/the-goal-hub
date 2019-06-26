@@ -1,7 +1,41 @@
-.grid-container {
-
+.container {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-template-rows: repeat(4, 100px);
+  row-gap: 15px;
+  column-gap: 60px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-right: 50%;
+  padding-left: 35%;
 }
 
-.grid-item {
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 140px;
+  height: 100px;
+}
 
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.amateur-container {
+  position: relative;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+.amateur-text {
+  position: absolute;
+  background: #FFF;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  border-radius: 3px;
 }
