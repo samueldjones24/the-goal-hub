@@ -7,7 +7,7 @@ const soccerImage = "https://koditips.com/wp-content/uploads/european-football-s
 const Home = () => (
     <div className="App bg">
       <header className="App-header">
-      <Link to="/categories"><img src={soccerImage} alt="soccer-ball" /></Link>
+      <Link to="/categories"><img className="soccer-img" src={soccerImage} alt="soccer-ball" /></Link>
         <h1>
           Goal of the Month
         </h1>

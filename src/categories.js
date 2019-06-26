@@ -16,15 +16,15 @@ const Categories = () => (
     <div className="App bg">
       <header className="App-header">
         <div className="container">
-        <Link to="/categories/premier-league"><img src={imagePL} alt="Premier League" /></Link>
-        <Link to="/categories/champions-league"><img src={imageCL} alt="Champions League" /></Link>
-        <Link to="/categories/english-football-league"><img src={imageEFL} alt="EFL" /></Link>
-        <Link to="/categories/fa-cup"><img src={imageFA} alt="FA Cup" /></Link>
-        <Link to="/categories/euro-championships"><img src={imageEuros} alt="Euros" /></Link>
-        <Link to="/categories/world-cup"><img src={imageWC} alt="World Cup" /></Link>
-        <Link to="/categories/wsl"><img src={imageWSL} alt="Women's Super League" /></Link>
+        <Link to="/categories/premier-league"><img className="item" src={imagePL} alt="Premier League" /></Link>
+        <Link to="/categories/champions-league"><img className="item" src={imageCL} alt="Champions League" /></Link>
+        <Link to="/categories/english-football-league"><img className="item" src={imageEFL} alt="EFL" /></Link>
+        <Link to="/categories/fa-cup"><img className="item" src={imageFA} alt="FA Cup" /></Link>
+        <Link to="/categories/euro-championships"><img className="item" src={imageEuros} alt="Euros" /></Link>
+        <Link to="/categories/world-cup"><img className="item" src={imageWC} alt="World Cup" /></Link>
+        <Link to="/categories/wsl"><img className="item" src={imageWSL} alt="Women's Super League" /></Link>
         <div className="amateur-container">
-        <Link to="/categories/amateur"><img src={imageAms} alt="Amateur Football" /></Link>
+        <Link to="/categories/amateur"><img className="item" src={imageAms} alt="Amateur Football" /></Link>
         <div className="amateur-text">AMATEUR</div>
         </div>
         </div>
