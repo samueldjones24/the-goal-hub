@@ -1,0 +1,83 @@
+.goal-card {
+	width:650px;
+	padding:30px;
+	margin:40px auto;
+	background: #F8F8F8;
+	border-radius: 10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+}
+
+.goal-card .inner-wrap{
+	padding: 25px;
+	background: #FFF;
+	border-radius: 6px;
+	margin-bottom: 15px;
+}
+
+.goal-card .title{
+	background: #750086;
+	padding: 10px 30px 10px 30px;
+	margin: -30px -30px 10px -30px;
+	border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	color: #fff;
+	text-align: center;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+	font: normal bold 25px 'Zilla Slab', serif; 
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: 1px solid #257C9E;
+	display: block;
+}
+
+.goal-card .card-header-wrap{
+	padding: 30px 30px 30px 30px;
+	margin: -20px -20px 10px -20px;
+	background: rgb(248, 248, 248);
+	border-radius: 6px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+
+.goal-card .logo-icon {
+	color: #750086;
+	font-size: 20px;
+}
+
+.goal-card span{
+	font: 18px Arial, Helvetica, sans-serif;
+	color: black;
+	padding-top: 20px;
+}
+
+.goal-card .link{
+	background: #948696;
+	display: block;
+	text-align: center;
+	padding: 10px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+	font: normal 30px 'Zilla Slab', serif; 
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: 1px solid #257C9E;
+	font-size: 20px;
+}
+
+.goal-card .link{
+	background: #611270;;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+}
