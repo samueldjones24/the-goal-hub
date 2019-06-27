@@ -1,12 +1,9 @@
 import React from 'react';
-import './goalCard.css';
+// import './goalCard.css';
 
-const GoalCard = ({
-  title,
-}) => {
-  return (
-    <div className="goal-card">
-      <h1 className="title">`{title}`</h1>
+const GoalCard = (props) => (
+      <div>
+      <h1>{props.goal.snippet.title}</h1>
       {/* <div className="inner-wrap">
         <div className="card-header-wrap">
           <div className="card-header">
@@ -28,6 +25,5 @@ const GoalCard = ({
       </div> */}
     </div>
   );
-};
 
 export default GoalCard;

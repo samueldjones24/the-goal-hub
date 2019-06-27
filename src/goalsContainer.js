@@ -1,11 +1,12 @@
 import React, { Fragment } from 'react';
 import GoalCard from './goalCard';
+import data from './data/data.json';
 
 class Goals extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      goals: [],
+      goals: data.items,
       // eslint-disable-next-line react/no-unused-state
       isError: false,
       // saveError: false,
@@ -29,15 +30,15 @@ class Goals extends React.Component {
   }
 
   render() {
+    console.log(this.state)
     return (
       <Fragment>
         <div className="goals">
           {this.state.goals.map(goal => {
             return (
               <GoalCard
-                key={goal.id}
-                {...goal}
-              />  
+              goal={goal}
+              />
             );
           })}
         </div>
