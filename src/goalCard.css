@@ -1,8 +1,11 @@
 .goal-card {
-	width:650px;
-	padding:30px;
-	margin:40px auto;
-	background: #F8F8F8;
+	height: 10%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 20px;
+	margin: 5px;
+	background: rgb(243, 239, 239);
 	border-radius: 10px;
 	-webkit-border-radius:10px;
 	-moz-border-radius: 10px;
@@ -11,44 +14,34 @@
 	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
 }
 
-.goal-card .inner-wrap{
-	padding: 25px;
-	background: #FFF;
-	border-radius: 6px;
-	margin-bottom: 15px;
-}
-
-.goal-card .title{
-	background: #750086;
-	padding: 10px 30px 10px 30px;
-	margin: -30px -30px 10px -30px;
-	border-radius: 10px 10px 0 0;
-	-webkit-border-radius: 10px 10px 0 0;
-	-moz-border-radius: 10px 10px 0 0;
-	color: #fff;
+.goal-card .title	 {
+	color: rgb(0, 0, 0);
 	text-align: center;
-	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
-	font: normal bold 25px 'Zilla Slab', serif; 
-	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
-	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
-	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
-	border: 1px solid #257C9E;
-	display: block;
+	font: normal bold 10px 'Zilla Slab', serif; 
 }
 
-.goal-card .card-header-wrap{
-	padding: 30px 30px 30px 30px;
-	margin: -20px -20px 10px -20px;
-	background: rgb(248, 248, 248);
-	border-radius: 6px;
-	margin-bottom: 15px;
-	text-align: center;
+.goal-card .likes-wrapper{
+	display: flex;
+	flex-direction: row;
+	width: 10%;
 }
 
+.goal-card .like-icon {
+	color: black;
+	size: 40px;
+}	
 
-.goal-card .logo-icon {
-	color: #750086;
-	font-size: 20px;
+.goal-card .like-icon:hover {
+	color: blue;
+	font-size: 120%;
+	cursor: pointer;
+}	
+
+.goal-card .likes{
+	font-size: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
 
 .goal-card span{

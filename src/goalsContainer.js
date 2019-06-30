@@ -1,6 +1,12 @@
 import React, { Fragment } from 'react';
 import GoalCard from './goalCard';
 import data from './data/data.json';
+import './goalsContainer.css';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faArrowLeft, faArrowRight);
 
 class Goals extends React.Component {
   constructor(props) {
@@ -24,19 +30,24 @@ class Goals extends React.Component {
         this.setState({ isError: true });
       });
   };
-
+  
   componentDidMount() {
     this.getGoals();
   }
 
   render() {
-    console.log(this.state)
     return (
       <Fragment>
         <div className="goals">
-          {this.state.goals.map(goal => {
+        <div className="header-wrapper">
+          <FontAwesomeIcon icon="arrow-left" className="arrow-icon" />
+          <span className="month">JUNE</span>
+          <FontAwesomeIcon icon="arrow-right" className="arrow-icon" />
+        </div>
+          {this.state.goals.sort((a, b) => (b.statistics.likeCount) - (a.statistics.likeCount)).map(goal => {
             return (
-              <GoalCard
+              <GoalCard 
+              key={goal.id}
               goal={goal}
               />
             );
