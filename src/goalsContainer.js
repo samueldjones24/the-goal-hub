@@ -49,7 +49,7 @@ class Goals extends React.Component {
               <GoalCard 
               key={goal.id}
               goal={goal}
-              />
+              />  
             );
           })}
         </div>
