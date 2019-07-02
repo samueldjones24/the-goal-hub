@@ -44,11 +44,12 @@ class Goals extends React.Component {
           <span className="month">JUNE</span>
           <FontAwesomeIcon icon="arrow-right" className="arrow-icon" />
         </div>
-          {this.state.goals.sort((a, b) => (b.statistics.likeCount) - (a.statistics.likeCount)).map(goal => {
+          {this.state.goals.sort((a, b) => (b.statistics.likeCount) - (a.statistics.likeCount)).map((goal, index) => {
             return (
               <GoalCard 
               key={goal.id}
               goal={goal}
+              rank={index+1}
               />  
             );
           })}

@@ -30,6 +30,7 @@ function toTitleCase(str) {
 
 const GoalCard = (props) => (
   <div className="goal-card">
+    <div className="rank-wrapper">{props.rank}</div>
     <div className="likes-wrapper">
       <FontAwesomeIcon icon="thumbs-up" className="like-icon" />
       <span className="likes">{props.goal.statistics.likeCount}</span>
