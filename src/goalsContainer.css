@@ -1,0 +1,25 @@
+.goals {
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/03/73/20/0557b9c92034b39.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.goals .header-wrapper {
+    background: rgb(243, 239, 239);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    font: normal bold 22px 'Zilla Slab', serif;
+    /* opacity: 0.1; */
+};
+
+.goals .month { 
+    color: red;
+}
+
+.goals .arrow-icon {
+    color: black;
+};
