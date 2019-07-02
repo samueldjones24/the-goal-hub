@@ -46,6 +46,7 @@ const GoalCard = (props) => (
   </div>
   );
 
+  
 
   
 export default GoalCard;

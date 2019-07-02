@@ -8,7 +8,6 @@ class GoalLikes extends React.Component {
          likes: parseInt(props.userLikes, 10),
         isLiked: false,
       };
-
     }
 
     handleGoalLike = () => {

@@ -15,6 +15,7 @@ const Likes = (props) => {
       />
       {props.likes}
 
+
    </div>
   );
 };
