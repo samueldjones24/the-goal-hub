@@ -30,13 +30,13 @@ function toTitleCase(str) {
 
 const GoalCard = (props) => (
   <div className="goal-card">
-    <div className="rank-wrapper">{props.rank}</div>
+    <div className="rank">{props.rank}</div>
+      <iframe className="video" title={props.goal.etag} width="80" height="65" src={`https://www.youtube.com/embed/HWwbwT2h0dg`} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+      <span className="title">{toTitleCase(props.goal.snippet.title)}</span>
     <div className="likes-wrapper">
       <FontAwesomeIcon icon="thumbs-up" className="like-icon" />
       <span className="likes">{props.goal.statistics.likeCount}</span>
     </div>
-      <span className="title">{toTitleCase(props.goal.snippet.title)}</span>
-      <iframe className="video" title={props.goal.etag} width="80" height="65" src={`https://www.youtube.com/embed/HWwbwT2h0dg`} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
   </div>
   );
 
