@@ -8,6 +8,8 @@ import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 library.add(faArrowLeft, faArrowRight);
 
+let baseURL = "https://www.youtube.com/embed"
+
 class Goals extends React.Component {
   constructor(props) {
     super(props);
@@ -50,6 +52,7 @@ class Goals extends React.Component {
               key={goal.id}
               goal={goal}
               rank={index+1}
+              URL={`${baseURL}/${goal.id}`}
               />  
             );
           })}

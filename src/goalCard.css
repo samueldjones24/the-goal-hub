@@ -3,6 +3,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: center;
 	padding: 10px;
 	margin: 5px;
 	background: rgb(243, 239, 239);
@@ -14,12 +15,27 @@
 	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
 }
 
+.goal-card .rank{
+	/* display: flex;
+	flex-direction: column;
+	justify-content: center; */
+	padding: 10px 30px 10px 5px;
+	font: normal 900 30px 'Anton', serif; 
+	color: rgb(168, 5, 5);
+	margin-right: 0px;
+	max-width: 20px;
+}
+
+.goal-card .video{
+	margin-right: 10px; 
+}
+
 .goal-card .title	 {
 	color: rgb(0, 0, 0);
 	text-align: center;
-	display: flex;
+	/* display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: center; */
 	font: normal bold 12px 'Zilla Slab', serif; 
 
 }
@@ -27,8 +43,9 @@
 .goal-card .likes-wrapper{
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
-	padding: 0px 15px 0px 0px;
+	justify-content: space-evenly;
+	padding: 0px;
+	margin-left: 10px;
 }
 
 .goal-card .like-icon {
@@ -43,8 +60,9 @@
 }	
 
 .goal-card .likes{
-	font: normal bold 12px 'Zilla Slab', serif; 
-	display: flex;
+	font: normal bold 12px 'Zilla Slab', serif;
+	padding-top: 10px; 
+	/* display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-around; */
 };
