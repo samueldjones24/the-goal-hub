@@ -1,0 +1,50 @@
+.goal-card {
+	height: 10%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 10px;
+	margin: 5px;
+	background: rgb(243, 239, 239);
+	border-radius: 10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+}
+
+.goal-card .title	 {
+	color: rgb(0, 0, 0);
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font: normal bold 12px 'Zilla Slab', serif; 
+
+}
+
+.goal-card .likes-wrapper{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 0px 15px 0px 0px;
+}
+
+.goal-card .like-icon {
+	color: black;
+	size: 40px;
+}	
+
+.goal-card .like-icon:hover {
+	color: blue;
+	font-size: 120%;
+	cursor: pointer;
+}	
+
+.goal-card .likes{
+	font: normal bold 12px 'Zilla Slab', serif; 
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+};
