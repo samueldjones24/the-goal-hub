@@ -71,3 +71,11 @@ img {
 .enter-site:hover :not(img) {
   opacity: 1;
 }
+
+@media only screen and (max-width: 600px) {
+  .enter-site :not(img) {
+    opacity: 1;
+    color: rgb(35, 221, 144);
+    font-weight: bold;
+  }
+}

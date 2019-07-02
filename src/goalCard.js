@@ -3,8 +3,10 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import './goalCard.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
+import GoalLikes from './goal-details';
 
 library.add(faThumbsUp);
+
 
 function toTitleCase(str) {
   return str.replace(
@@ -32,12 +34,19 @@ const GoalCard = (props) => (
   <div className="goal-card">
     <div className="rank-wrapper">{props.rank}</div>
     <div className="likes-wrapper">
-      <FontAwesomeIcon icon="thumbs-up" className="like-icon" />
-      <span className="likes">{props.goal.statistics.likeCount}</span>
+       
+      
+      <GoalLikes
+      userLikes={props.goal.statistics.likeCount}
+            />
+      
     </div>
       <span className="title">{toTitleCase(props.goal.snippet.title)}</span>
       <iframe className="video" title={props.goal.etag} width="80" height="65" src={`https://www.youtube.com/embed/HWwbwT2h0dg`} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
   </div>
   );
 
+  
+
+  
 export default GoalCard;
