@@ -37,7 +37,7 @@ const GoalCard = (props) => (
        
       
       <GoalLikes
-      userlikes={props.goal.statistics.likeCount}
+      userLikes={props.goal.statistics.likeCount}
             />
       
     </div>
