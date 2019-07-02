@@ -15,21 +15,6 @@ function toTitleCase(str) {
   );
 };
 
-// let baseURL = props => (props.goal.id.map(x => {
-//     return `"https://www.youtube.com/watch?v/=${x}"`
-//   })
-// );
-
-// let baseURL = `https://www.youtube.com/embed/HWwbwT2h0dg`
-
-// let getURL = (props) => {
-//   return <iframe title={(props.goal.etag)} width="260" height="185" src={`https://www.youtube.com/embed/${(props.goal.id)}`} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-// }
-
-// EXAMPLE URL "https://www.youtube.com/embed/HWwbwT2h0dg"
-
-// {`https://www.youtube.com/embed/${props.goal.id}`}
-
 const GoalCard = (props) => (
   <div className="goal-card">
     <div className="rank">{props.rank}</div>
