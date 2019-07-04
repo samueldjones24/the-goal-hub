@@ -8,7 +8,7 @@ import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 library.add(faArrowLeft, faArrowRight);
 
-let baseURL = "https://www.youtube.com/embed"
+let thumbnailBaseURL = "https://img.youtube.com/vi/"
 
 class Goals extends React.Component {
   constructor(props) {
@@ -17,7 +17,6 @@ class Goals extends React.Component {
       goals: data.items,
       // eslint-disable-next-line react/no-unused-state
       isError: false,
-      // saveError: false,
     };
   }
 
@@ -52,7 +51,7 @@ class Goals extends React.Component {
               key={goal.id}
               goal={goal}
               rank={index+1}
-              URL={`${baseURL}/${goal.id}`}
+              thumbnail={`${thumbnailBaseURL}${goal.id}/0.jpg`}
               />  
             );
           })}
