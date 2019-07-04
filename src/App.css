@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -42,7 +43,7 @@ img {
   margin: 4px;
   position: relative;
   font-size: 35px;
-  text-shadow: 3px 5px 2px #474747;
+  text-shadow: 2px 2px 2px #474747;
 }
 
 .enter-site img {
@@ -72,10 +73,11 @@ img {
   opacity: 1;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 415px) {
   .enter-site :not(img) {
     opacity: 1;
     color: rgb(35, 221, 144);
     font-weight: bold;
+    transition-delay: 4s;
   }
 }

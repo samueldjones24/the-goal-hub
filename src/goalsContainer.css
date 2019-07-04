@@ -1,9 +1,16 @@
+
+@media only screen and (max-width: 415px) {
 .goals {
     background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/03/73/20/0557b9c92034b39.jpg");
-    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
   }
 
 .goals .header-wrapper {
@@ -11,15 +18,49 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 10px;
     font: normal bold 22px 'Zilla Slab', serif;
-    /* opacity: 0.1; */
-};
+}
 
 .goals .month { 
-    color: red;
+    color: black;
 }
 
 .goals .arrow-icon {
     color: black;
-};
+    padding-left: 50px;
+    padding-right: 50px;
+}
+}
+
+@media only screen and (min-width: 416px) {
+.goals {
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/03/73/20/0557b9c92034b39.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+  }
+
+.goals .header-wrapper {
+    background: rgb(243, 239, 239);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font: normal bold 22px 'Zilla Slab', serif;
+}
+
+.goals .month { 
+    color: black;
+}
+
+.goals .arrow-icon {
+    color: black;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+}

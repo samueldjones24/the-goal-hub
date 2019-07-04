@@ -7,16 +7,16 @@ library.add(faThumbsUp);
 
 const Likes = (props) => {
   return (
-      <div>
+    <div>
+      <span>
       <FontAwesomeIcon
         icon="thumbs-up"
         className="thumbs-up-icon"
         onClick={props.goalLike}
       />
-      {props.likes}
-
-
-   </div>
+      </span>
+      <span>{props.likes}</span>
+    </div>
   );
 };
 
