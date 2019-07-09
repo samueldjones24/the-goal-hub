@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import GoalCard from './goalCard';
-import data from './data/data.json';
+import april from './data/apr.json';
+import march from './data/mar.json';
 import './goalsContainer.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -14,11 +15,38 @@ class Goals extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      goals: data.items,
+      aprGoals: april.items,
+      marGoals: march.items,
+      displayMonth: "April",
       // eslint-disable-next-line react/no-unused-state
       isError: false,
     };
   }
+
+  changeMonthLeft = () => {
+    if (this.state.displayMonth = "April")  {
+      this.setState({
+        displayMonth: "March"
+      })
+    } else {
+      this.setState({
+        displayMonth: "April"
+      })
+    };
+  };
+
+  changeMonthRight = () => {
+    if (this.state.displayMonth = "March")  {
+      this.setState({
+        displayMonth: "April"
+      })
+    } else {
+      this.setState({
+        displayMonth: "March"
+      })
+    };
+  };
+
 
   getGoals = () => {
     fetch('../public/data.json')
@@ -37,15 +65,22 @@ class Goals extends React.Component {
   }
 
   render() {
+    let goalsToDisplay = "";
+    if (this.state.displayMonth === "April") {
+      goalsToDisplay = this.state.aprGoals;
+    }
+    else {
+      goalsToDisplay = this.state.marGoals;
+    }
     return (
       <Fragment>
         <div className="goals">
         <div className="header-wrapper">
-          <FontAwesomeIcon icon="arrow-left" className="arrow-icon" />
-          <span className="month">JUNE</span>
-          <FontAwesomeIcon icon="arrow-right" className="arrow-icon" />
+          <FontAwesomeIcon icon="arrow-left" className="arrow-icon" onClick={this.changeMonthLeft}/>
+          <span className="month">{this.state.displayMonth}</span>
+          <FontAwesomeIcon icon="arrow-right" className="arrow-icon" onClick={this.changeMonthRight}/>
         </div>
-          {this.state.goals.sort((a, b) => (b.statistics.likeCount) - (a.statistics.likeCount)).map((goal, index) => {
+          {goalsToDisplay.sort((a, b) => (b.statistics.likeCount) - (a.statistics.likeCount)).map((goal, index) => {
             return (
               <GoalCard 
               key={goal.id}

@@ -29,6 +29,12 @@
     color: black;
     padding-left: 50px;
     padding-right: 50px;
+    cursor: pointer;
+}
+
+.goals .arrow-icon:hover {
+    font-size: 110%;
+    color: blue;
 }
 }
 
@@ -62,5 +68,10 @@
     color: black;
     padding-left: 50px;
     padding-right: 50px;
+    cursor: pointer;
+}
+.goals .arrow-icon:hover {
+    font-size: 110%;
+    color: blue;
 }
 }
