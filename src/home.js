@@ -22,15 +22,7 @@ const Home = (props) => (
           Goals from the EPL, Champions League, La Liga and more...
           </h3>
       </header>
-  
-
-    </div>
-  );
-
-export default Home;
-
-
-    /* {props.userId
+      {props.userId
       ? (
         <div>
           <button onClick={props.onLogout}>Log out</button>
@@ -38,9 +30,14 @@ export default Home;
       ) : (
       <FacebookLogin
             appId={2279032468855290}
-            autoLoad
+            autoLoad={true}
             callback={props.onLogin}
           >
       Sign in with Facebook
           </FacebookLogin>
-      )} */
+      )}
+
+    </div>
+  );
+
+export default Home;
