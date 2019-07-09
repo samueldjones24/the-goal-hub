@@ -5,6 +5,7 @@ import './goalsContainer.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import MenuBar from './menuBar';
 
 library.add(faArrowLeft, faArrowRight);
 
@@ -40,6 +41,7 @@ class Goals extends React.Component {
   render() {
     return (
       <Fragment>
+            <MenuBar />
         <div className="goals">
         <div className="header-wrapper">
           <FontAwesomeIcon icon="arrow-left" className="arrow-icon" />
