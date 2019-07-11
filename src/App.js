@@ -16,12 +16,15 @@ class App extends React.Component {
 
   handleLogin = (response) => {
     this.setState({ userId: response.userID })
+    console.log('logged in')
   };
 
   handleLogOut = () => {
     window.FB.logout();
     this.setState({ userId: null })
   };
+
+ 
 
 
 
@@ -30,7 +33,9 @@ render(){
     <div>
     <Router>
       <Switch>
-        <Route exact path="/" component={Home} />    
+        <Route exact path="/" component={() => <Home
+        onLogin={this.handleLogin}
+         ></Home>} />    
         <Route exact path="/categories" component={Categories} />    
         <Route exact path="/categories/premier-league" component={Goals} />    
       </Switch>
