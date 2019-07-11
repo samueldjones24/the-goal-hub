@@ -3,6 +3,7 @@ import './goalCard.css';
 
 import GoalLikes from './goal-details';
 
+
 function toTitleCase(str) {
   return str.replace(
     /\w\S*/g,
@@ -22,6 +23,8 @@ const GoalCard = (props) => (
       userLikes={props.goal.statistics.likeCount}
       />
     </div>
+  
+  
   </div>
   );
 

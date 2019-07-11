@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './App.css';
-import FacebookLogin from 'react-facebook-login';
+
 
 const soccerImage = "https://koditips.com/wp-content/uploads/european-football-soccer-kodi.png";
 
@@ -22,20 +22,7 @@ const Home = (props) => (
           Goals from the EPL, Champions League, La Liga and more...
           </h3>
       </header>
-      {props.userId
-      ? (
-        <div>
-          <button onClick={props.onLogout}>Log out</button>
-        </div>
-      ) : (
-      <FacebookLogin
-            appId={2279032468855290}
-            autoLoad={true}
-            callback={props.onLogin}
-          >
-      Sign in with Facebook
-          </FacebookLogin>
-      )}
+      
 
     </div>
   );

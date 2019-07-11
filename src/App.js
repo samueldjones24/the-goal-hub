@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Categories from './categories';
 import Goals from './goalsContainer';
 import Home from './home';
+import NavBar from './nav';
 
 import './App.css';
 
@@ -19,9 +20,10 @@ class App extends React.Component {
     console.log('logged in')
   };
 
-  handleLogOut = () => {
+  handleLogout = () => {
     window.FB.logout();
     this.setState({ userId: null })
+    console.log('logged out')
   };
 
  
@@ -31,13 +33,20 @@ class App extends React.Component {
 render(){
   return (
     <div>
+      <NavBar
+          onLogin={this.handleLogin}
+          userId={this.state.userId}
+          onLogout={this.handleLogout}
+        />
     <Router>
       <Switch>
         <Route exact path="/" component={() => <Home
-        onLogin={this.handleLogin}
+        
          ></Home>} />    
         <Route exact path="/categories" component={Categories} />    
-        <Route exact path="/categories/premier-league" component={Goals} />    
+        <Route exact path="/categories/premier-league" component={() => <Goals
+        
+        ></Goals>} />    
       </Switch>
      </Router>
     </div>
