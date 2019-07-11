@@ -2,6 +2,20 @@ import React from 'react';
 import './goalCard.css';
 
 import GoalLikes from './goal-details';
+import { FacebookShareButton,
+  TwitterShareButton, 
+  WhatsappShareButton,} from 'react-share';
+
+  import {
+    FacebookIcon,
+    TwitterIcon,
+    WhatsappIcon,
+  } from 'react-share';
+
+
+
+const shareUrl = 'https://www.youtube.com/channel/UCEg25rdRZXg32iwai6N6l0w'
+
 
 
 function toTitleCase(str) {
@@ -23,6 +37,23 @@ const GoalCard = (props) => (
       userLikes={props.goal.statistics.likeCount}
       />
     </div>
+<span>
+  <FacebookShareButton
+  url={shareUrl}>
+  <FacebookIcon
+  size={20}
+  round />
+  </FacebookShareButton>
+</span>
+    <span>
+    <TwitterShareButton
+        url={shareUrl}
+        >
+        <TwitterIcon
+          size={20}
+          round />
+      </TwitterShareButton>
+    </span>
   
   
   </div>
