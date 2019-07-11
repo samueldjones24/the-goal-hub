@@ -4,12 +4,12 @@ import './goalCard.css';
 import GoalLikes from './goal-details';
 import { FacebookShareButton,
   TwitterShareButton, 
-  WhatsappShareButton,} from 'react-share';
+  } from 'react-share';
 
   import {
     FacebookIcon,
     TwitterIcon,
-    WhatsappIcon,
+
   } from 'react-share';
 
 
