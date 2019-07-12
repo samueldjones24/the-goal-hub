@@ -1,30 +1,25 @@
 import React, { Fragment } from 'react';
 import GoalCard from './goalCard';
-// import {channelID, apiKey, playlistIDsURL} from './data/youtubeAPI.js';
-// import april from './data/apr.json';
-// import march from './data/mar.json';
 import './goalsContainer.css';
+import Loader from 'react-loader-spinner';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 library.add(faArrowLeft, faArrowRight);
 
-let thumbnailBaseURL = "https://img.youtube.com/vi/"
-
 const apiKey = `AIzaSyBdi5Q3kByqWn-UYNznAvsZMu_Bs5YGWPs`;
 const channelID = `UCXDkshUQ8OFJjz2BKGjt-KQ`;
 const playlistIDsURL = `https://www.googleapis.com/youtube/v3/playlists?part=snippet&channelId=`;
 const playlistItemsURL = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=`
 const videoDetailsURL = `https://www.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=`
+let thumbnailBaseURL = "https://img.youtube.com/vi/"
 
 class Goals extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      // aprGoals: april.items,
-      // marGoals: march.items,
-      displayMonth: "April",
+      displayMonth: "March",
       playlistInfo: {},
       marchVideoList: {},
       aprilVideoList: {},
@@ -37,29 +32,29 @@ class Goals extends React.Component {
     };
   }
 
-  // changeMonthLeft = () => {
-  //   if (this.state.displayMonth = "April")  {
-  //     this.setState({
-  //       displayMonth: "March"
-  //     })
-  //   } else {
-  //     this.setState({
-  //       displayMonth: "April"
-  //     })
-  //   };
-  // };
+  changeMonthLeft = () => {
+    if (this.state.displayMonth = "April")  {
+      this.setState({
+        displayMonth: "March"
+      })
+    } else {
+      this.setState({
+        displayMonth: "April"
+      })
+    };
+  };
 
-  // changeMonthRight = () => {
-  //   if (this.state.displayMonth = "March")  {
-  //     this.setState({
-  //       displayMonth: "April"
-  //     })
-  //   } else {
-  //     this.setState({
-  //       displayMonth: "March"
-  //     })
-  //   };
-  // };
+  changeMonthRight = () => {
+    if (this.state.displayMonth = "March")  {
+      this.setState({
+        displayMonth: "April"
+      })
+    } else {
+      this.setState({
+        displayMonth: "March"
+      })
+    };
+  };
 
   getData = () => {
     fetch(`${playlistIDsURL}${channelID}&key=${apiKey}`)
@@ -94,58 +89,50 @@ class Goals extends React.Component {
         this.setState({ isError: true });
       });
   };
-
-  // getGoals = () => {
-  //   fetch('../public/data.json')
-  //     .then((res) => res.json())
-  //     .then(({ data: goals }) => {
-  //       this.setState({ goals });
-  //     })
-  //     .catch(() => {
-  //       // eslint-disable-next-line react/no-unused-state
-  //       this.setState({ isError: true });
-  //     });
-  // };
   
   componentDidMount() {
     this.getData();
   }
 
   render() {
-    if (this.state.marchVideosHere === false && this.state.aprilVideosHere === false) {
-      return <span>LOADING</span>
-    } else { 
-      let goalsToDisplay = "";
-      if (this.state.displayMonth === "April") {
-        goalsToDisplay = this.state.aprilVideoDetails.items;
-      }
-      else {
-        goalsToDisplay = this.state.marchVideoDetails.items;
-      }
-      console.log(this.state)
-    return (
-      <Fragment>
-        <div className="goals">
-        <div className="header-wrapper">
-          <FontAwesomeIcon icon="arrow-left" className="arrow-icon" onClick={this.changeMonthLeft}/>
-          <span className="month">{this.state.displayMonth}</span>
-          <FontAwesomeIcon icon="arrow-right" className="arrow-icon" onClick={this.changeMonthRight}/>
+      if (this.state.marchVideosHere === false && this.state.aprilVideosHere === false) {
+        return (
+        <div className="loading-wrap">
+        <Loader className="loading-icon" type="Grid" color="green" height={80} width={80} />
+        <br></br>
+        <span className="load-text">LOADING</span>
         </div>
-          {goalsToDisplay.sort((a, b) => (b.statistics.likeCount) - (a.statistics.likeCount)).map((goal, index) => {
-            return (
-              <GoalCard 
-              key={goal.id}
-              goal={goal}
-              rank={index+1}
-              thumbnail={`${thumbnailBaseURL}${goal.id}/0.jpg`}
-              />  
-            )
-          })};
-        </div>
-        <span>Hello</span>
-      </Fragment>
-    );
+        )
+      } else { 
+        let goalsToDisplay = "";
+        if (this.state.displayMonth === "April") {
+          goalsToDisplay = this.state.aprilVideoDetails.items;
+        }
+        else {
+          goalsToDisplay = this.state.marchVideoDetails.items;
+        }
+      return (
+        <Fragment>
+          <div className="goals">
+          <div className="header-wrapper">
+            <FontAwesomeIcon icon="arrow-left" className="arrow-icon" onClick={this.changeMonthLeft}/>
+            <span className="month">{this.state.displayMonth}</span>
+            <FontAwesomeIcon icon="arrow-right" className="arrow-icon" onClick={this.changeMonthRight}/>
+          </div>
+            {goalsToDisplay.sort((a, b) => (b.statistics.likeCount) - (a.statistics.likeCount)).map((goal, index) => {
+              return (
+                <GoalCard 
+                key={goal.id}
+                goal={goal}
+                rank={index+1}
+                thumbnail={`${thumbnailBaseURL}${goal.id}/0.jpg`}
+                />  
+               )
+            })};
+          </div>
+        </Fragment>
+      );
+    }
   }
-}
 }
 export default Goals;
