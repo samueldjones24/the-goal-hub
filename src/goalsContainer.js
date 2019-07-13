@@ -97,10 +97,12 @@ class Goals extends React.Component {
   render() {
       if (this.state.marchVideosHere === false && this.state.aprilVideosHere === false) {
         return (
-        <div className="loading-wrap">
-        <Loader className="loading-icon" type="Grid" color="green" height={80} width={80} />
-        <br></br>
-        <span className="load-text">LOADING</span>
+        <div className= "loading-header">
+          <div className="loading-wrap">
+            <Loader className="loading-icon" type="Grid" color="green" height={80} width={80} />
+            <br></br>
+            <span className="load-text">LOADING</span>
+          </div>
         </div>
         )
       } else { 
