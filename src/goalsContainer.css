@@ -1,5 +1,15 @@
 
 @media only screen and (max-width: 415px) {
+.loading-wrap {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+    .load-text {
+    font: normal bold 16px 'Barriecito', serif;
+}
 .goals {
     background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/03/73/20/0557b9c92034b39.jpg");
     background-position: center;
@@ -29,10 +39,26 @@
     color: black;
     padding-left: 50px;
     padding-right: 50px;
+    cursor: pointer;
+}
+
+.goals .arrow-icon:hover {
+    font-size: 110%;
+    color: blue;
 }
 }
 
 @media only screen and (min-width: 416px) {
+    .loading-wrap {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        /* bring your own prefixes */
+        transform: translate(-50%, -50%);
+    }
+        .load-text {
+        font: normal bold 16px 'Barriecito', serif;
+    }
 .goals {
     background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/03/73/20/0557b9c92034b39.jpg");
     background-position: center;
@@ -62,5 +88,10 @@
     color: black;
     padding-left: 50px;
     padding-right: 50px;
+    cursor: pointer;
+}
+.goals .arrow-icon:hover {
+    font-size: 110%;
+    color: blue;
 }
 }
