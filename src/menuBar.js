@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import menuItems from './data/menuItems.json';
 import './menuBar.css';
 
+const styles = {};
+
 class MenuBar extends Component {
   constructor( props ) {
     super( props )
@@ -21,24 +23,24 @@ handleList( children ) {
     const { classes } = this.props;
     const { state } = this;
 return children.map( ( menu ) => {
-      if ( !menu.children ) {
-        return (
-          <div key={ menu.name }>
-            <ListItem 
-              button 
-              key={ menu.name }>
-              <Link 
-                to={ menu.url }
-                className={ classes.links }>
-                <ListItemText 
-                  inset 
-                  primary={ menu.name } 
-                />
-              </Link>
-            </ListItem>
-          </div>
-        )
-      }
+  if ( !menu.children ) {
+    return (
+      <div key={ menu.name }>
+        <ListItem 
+          button 
+          key={ menu.name }>
+          <Link 
+            to={ menu.url }
+            className={ classes.links }>
+            <ListItemText 
+              inset 
+              primary={ menu.name } 
+            />
+          </Link>
+        </ListItem>
+      </div>
+    )
+  }
       return (
         <div key={ menu.name }>
           <ListItem 
@@ -46,7 +48,6 @@ return children.map( ( menu ) => {
             onClick={ () => this.handleClick( menu.name ) }
             >
             <ListItemText 
-              inset 
               primary={ menu.name }
                />
              <Menu className="menu-icon" />
@@ -70,7 +71,7 @@ render() {
           open
           anchor="top"
           >
-          <div>
+          <div className="list-items">
             <List>
             { this.handleList( menuItems.data ) }
             </List>
@@ -80,4 +81,4 @@ render() {
     )
   }
 }
-export default withStyles()(MenuBar);
+export default withStyles(styles)(MenuBar);

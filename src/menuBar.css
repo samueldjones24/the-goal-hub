@@ -1,3 +1,8 @@
 .menu-icon {
-  padding: none;
+  padding-right: 30%;
+}
+
+.list-items {
+  padding-left: 50%;
+  width: 50%;
 }
