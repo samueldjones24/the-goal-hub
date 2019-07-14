@@ -21,6 +21,7 @@
 
 .goal-card .video{
 	margin-left: 10px; 
+	cursor: pointer;
 }
 
 .goal-card .title	 {
@@ -75,6 +76,7 @@
 	
 	.goal-card .video{
 		margin-left: 10px; 
+		cursor: pointer;
 	}
 	
 	.goal-card .title	 {
