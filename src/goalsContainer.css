@@ -1,51 +1,16 @@
 @media only screen and (max-width: 415px) {
-<<<<<<< HEAD
-=======
-.loading-wrap {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    /* bring your own prefixes */
-    transform: translate(-50%, -50%);
-}
-    .load-text {
-    font: normal bold 16px 'Barriecito', serif;
-}
-.goals {
-    background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/03/73/20/0557b9c92034b39.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 100px;
-  }
->>>>>>> c20d83cd39a332b96e2e8e046c020f1b6ca7cd8f
-
     .loading-header {
-            background-color: black;
-            /* background-position: center; */
-            /* background-repeat: no-repeat; */
-            /* background-size: cover; */
-            min-height: 100vh;
-            /* display: flex; */
-            /* flex-direction: column; */
-            /* align-items: center; */
-            /* justify-content: center; */
-            /* padding-top: 10px; */
+        background-color: black;
+        min-height: 100vh;
     }
 
     .loading-wrap {
         position: fixed;
         top: 50%;
         left: 50%;
-        /* bring your own prefixes */
         transform: translate(-50%, -50%);
     }
-    
+
         .load-text {
         font: normal bold 16px 'Barriecito', serif;
         color: rgb(10, 161, 5);
@@ -100,7 +65,6 @@
         position: fixed;
         top: 50%;
         left: 50%;
-        /* bring your own prefixes */
         transform: translate(-50%, -50%);
     }
 
