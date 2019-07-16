@@ -14,7 +14,7 @@
         transform: translate(-50%, -50%);
     }
 
-        .load-text {
+    .load-text {
         font: normal bold 16px 'Barriecito', serif;
         color: white;
     }
@@ -38,6 +38,8 @@
         flex-direction: row;
         justify-content: space-around;
         font: normal bold 22px 'Zilla Slab', serif;
+        border-radius: 10px;
+        margin-bottom: 20px;
     }
 
     .goals .month { 
@@ -46,8 +48,8 @@
 
     .goals .arrow-icon {
         color: black;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
         cursor: pointer;
     }
 
@@ -74,8 +76,8 @@
         transform: translate(-50%, -50%);
     }
 
-        .load-text {
-        font: normal bold 16px 'Barriecito', serif;
+    .load-text {
+        font: normal bold 20px 'Barriecito', serif;
         color: white;
     }
 
@@ -98,6 +100,8 @@
         flex-direction: row;
         justify-content: space-around;
         font: normal bold 22px 'Zilla Slab', serif;
+        border-radius: 10px;
+        margin-bottom: 20px;
     }
 
     .goals .month { 

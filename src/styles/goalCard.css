@@ -9,10 +9,11 @@
 	margin: 5px;
 	background: rgb(243, 239, 239);
 	border-radius: 10px;
+	width: 90%;
 }
 
 .goal-card .rank{
-	padding: 10px 30px 10px 5px;
+	padding: 10px 10px 10px 5px;
 	font: normal 900 30px 'Anton', serif; 
 	color: rgb(6, 6, 235);
 	margin-right: 0px;
@@ -28,11 +29,15 @@
 	color: rgb(0, 0, 0);
 	text-align: center;
 	padding-left: 10px;
-	font: normal bold 12px 'Zilla Slab', serif; 
-	padding-right: 20px;
+	font: normal bold 13px 'Zilla Slab', serif; 
+	padding-right: 10px;
 }
 
-.goal-card .likes-wrapper{
+.likes-wrapper {
+	margin-left: auto;
+}
+
+.likes-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -82,12 +87,17 @@
 	.goal-card .title	 {
 		color: rgb(0, 0, 0);
 		text-align: center;
-		padding-left: 10px;
-		font: normal bold 12px 'Zilla Slab', serif; 
+		padding-left: 30px;
+		font: normal bold 20px 'Zilla Slab', serif; 
 		padding-right: 20px;
 	}
 	
-	.goal-card .likes-wrapper{
+	.likes-wrapper {
+		margin-left: auto;
+		padding-right: 20px;
+	}
+	
+	.likes-container {
 		display: flex;
 		flex-direction: column;
 		align-items: center;

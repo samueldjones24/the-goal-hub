@@ -15,14 +15,14 @@ function toTitleCase(str) {
 
 const GoalCard = (props) => (
   <div className="goal-card">
-    <div className="rank">{props.rank}</div>
+      <span className="rank">{props.rank}</span>
       <img className="video" data-video={props.goal.id} alt="PLAY" width="80" height="65" src={props.thumbnail}></img>
-      <span className="title">{toTitleCase(props.goal.snippet.title)}</span>
-    <div className="likes-wrapper">
-      <GoalLikes
-      userLikes={props.goal.statistics.likeCount}
-      />
-    </div>
+      <span className="title">{toTitleCase(props.goal.snippet.title).substring(0,30)}...</span>
+      <div className="likes-wrapper">
+        <GoalLikes
+        userLikes={props.goal.statistics.likeCount}
+        />
+      </div>
   </div>
   );
 

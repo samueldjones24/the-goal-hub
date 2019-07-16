@@ -120,7 +120,7 @@ class Goals extends React.Component {
           <div className="goals">
           <div className="header-wrapper">
             <FontAwesomeIcon icon="arrow-left" className="arrow-icon" onClick={this.changeMonthLeft}/>
-            <span className="month">{this.state.displayMonth}</span>
+            <span className="month">{this.state.displayMonth} 2019</span>
             <FontAwesomeIcon icon="arrow-right" className="arrow-icon" onClick={this.changeMonthRight}/>
           </div>
             {goalsToDisplay.sort((a, b) => (b.statistics.likeCount) - (a.statistics.likeCount)).map((goal, index) => {
