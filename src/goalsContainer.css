@@ -1,7 +1,10 @@
 @media only screen and (max-width: 415px) {
     .loading-header {
-        background-color: black;
+        background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/03/73/20/0557b9c92034b39.jpg");
         min-height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .loading-wrap {
@@ -13,7 +16,7 @@
 
         .load-text {
         font: normal bold 16px 'Barriecito', serif;
-        color: rgb(10, 161, 5);
+        color: white;
     }
 
     .goals {
@@ -26,7 +29,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-top: 10px;
+        padding-top: 80px;
     }
 
     .goals .header-wrapper {
@@ -57,8 +60,11 @@
 @media only screen and (min-width: 416px) {
 
     .loading-header {
-        background-color: black;
+        background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/03/73/20/0557b9c92034b39.jpg");
         min-height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .loading-wrap {
@@ -70,7 +76,7 @@
 
         .load-text {
         font: normal bold 16px 'Barriecito', serif;
-        color: rgb(10, 161, 5);
+        color: white;
     }
 
     .goals {
@@ -83,7 +89,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-top: 10px;
+        padding-top: 80px;
     }
 
     .goals .header-wrapper {

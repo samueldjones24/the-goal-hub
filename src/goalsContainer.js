@@ -100,7 +100,7 @@ class Goals extends React.Component {
         return (
         <div className= "loading-header">
           <div className="loading-wrap">
-            <Loader className="loading-icon" type="Grid" color="green" height={80} width={80} />
+            <Loader className="loading-icon" type="Grid" color="white" height={80} width={80} />
             <br></br>
             <span className="load-text">LOADING</span>
           </div>
