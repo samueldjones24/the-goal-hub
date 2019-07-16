@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import GoalCard from './goalCard';
-import './goalsContainer.css';
+import './styles/goalsContainer.css';
 import Loader from 'react-loader-spinner';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

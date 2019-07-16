@@ -3,7 +3,7 @@ import { List, ListItem, ListItemText, Collapse, Drawer, withStyles } from '@mat
 import { Menu } from '@material-ui/icons';
 import { Link } from 'react-router-dom';
 import menuItems from './data/menuItems.json';
-import './menuBar.css';
+import './styles/menuBar.css';
 
 const styles = {};
 

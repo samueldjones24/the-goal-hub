@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './categories.css';
-import './App.css';
+import './styles/categories.css';
+import './styles/App.css';
 import MenuBar from './menuBar';
 
 const imagePL = "https://www.footballticketnet.com/files/images/tournaments/Buy-Premier-League-Football-Tickets-FootballTicketNet.png";

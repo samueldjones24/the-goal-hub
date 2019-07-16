@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './App.css';
+import './styles/App.css';
 
 const soccerImage = "https://koditips.com/wp-content/uploads/european-football-soccer-kodi.png";
 

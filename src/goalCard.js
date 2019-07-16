@@ -1,5 +1,5 @@
 import React from 'react';
-import './goalCard.css';
+import './styles/goalCard.css';
 import './videoPlayer.js'
 
 import GoalLikes from './goal-details';
