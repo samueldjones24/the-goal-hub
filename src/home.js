@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './App.css';
+import './styles/App.css';
 
 
 const soccerImage = "https://koditips.com/wp-content/uploads/european-football-soccer-kodi.png";
@@ -11,16 +11,12 @@ const Home = (props) => (
       <Link to="/categories">
         <div className="enter-site">
           <img src={soccerImage} alt="soccer-ball" />
-          <span>ENTER SITE</span>
+          <span>The Goal Show</span>
         </div>
         </Link>
-        <h1>
-          Goal of the Month
-        </h1>
-          <h3>
-          Pick your goal of the month and upload your own videos!<br />
-          Goals from the EPL, Champions League, La Liga and more...
-          </h3>
+          <h1>
+          Pick your goal of the month from all the top leagues!<br />
+          </h1>
       </header>
       
 

@@ -7,7 +7,7 @@ library.add(faThumbsUp);
 
 const Likes = (props) => {
   return (
-    <div>
+    <div className="likes-container">
       <span>
       <FontAwesomeIcon
         icon="thumbs-up"

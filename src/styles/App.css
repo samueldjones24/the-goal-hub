@@ -22,14 +22,11 @@
 
 
 h1 {
-  font-size: 45px;
-  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 1px 0 #2c2c2c, 0 2px 0 #2a2a2a, 0 2px 0 #282828, 0 3px 0 #262626, 0 2px 0 #242424, 0 4px 0 #222, 0 5px 0 #202020, 0 5px 0 #1e1e1e, 0 8px 0 #1c1c1c, 0 9px 0 #1a1a1a, 0 10px 0 #181818, 0 10px 0 #161616, 0 10px 0 #141414, 0 10px 0 #121212, 0 10px 10px rgba(0,0,0,0.9);
-  padding: 5px;
-  margin: 0px;
-}
-
-h3 {
-  text-shadow: #474747 3px 5px 2px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  text-shadow: 1px 3px 1px #474747;
+  padding-top: 50px;
+  margin: 0;
 }
 
 img {
@@ -42,8 +39,9 @@ img {
   display: inline-block;
   margin: 4px;
   position: relative;
-  font-size: 35px;
+  font-size: 50px;
   text-shadow: 2px 2px 2px #474747;
+  padding-bottom: 50px;
 }
 
 .enter-site img {
@@ -55,8 +53,8 @@ img {
 
 .enter-site :not(img) {
   position: absolute;
-  top: 40%;
-  left: 18%;
+  top: 20%;
+  left: 0;
   z-index: 1;
   color: white;
   text-align: center;
@@ -76,7 +74,8 @@ img {
 @media only screen and (max-width: 415px) {
   .enter-site :not(img) {
     opacity: 1;
-    color: rgb(35, 221, 144);
+    color: rgb(60, 241, 166);
+    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 1px 0 #2c2c2c, 0 2px 0 #2a2a2a, 0 2px 0 #282828, 0 3px 0 #262626, 0 2px 0 #242424, 0 4px 0 #222, 0 5px 0 #202020, 0 5px 0 #1e1e1e, 0 8px 0 #1c1c1c, 0 9px 0 #1a1a1a, 0 10px 0 #181818, 0 10px 0 #161616, 0 10px 0 #141414, 0 10px 0 #121212, 0 10px 10px rgba(0,0,0,0.9);
     font-weight: bold;
     transition-delay: 4s;
   }

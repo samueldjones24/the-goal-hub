@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './categories.css';
-import './App.css';
+import './styles/categories.css';
+import './styles/App.css';
+import MenuBar from './menuBar';
 
 const imagePL = "https://www.footballticketnet.com/files/images/tournaments/Buy-Premier-League-Football-Tickets-FootballTicketNet.png";
 const imageCL = "https://statics.sportskeeda.com/wp-content/uploads/2014/06/uefa-champions-league-2013-1403699681.jpg";
@@ -14,6 +15,7 @@ const imageAms = "https://koditips.com/wp-content/uploads/european-football-socc
 
 const Categories = () => (
     <div className="App bg">
+      <MenuBar />
       <header className="App-header">
         <div className="container">
         <Link to="/categories/premier-league"><img className="item" src={imagePL} alt="Premier League" /></Link>
