@@ -7,6 +7,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import MenuBar from './menuBar';
 
+
+
 library.add(faArrowLeft, faArrowRight);
 
 const apiKey = `AIzaSyBdi5Q3kByqWn-UYNznAvsZMu_Bs5YGWPs`;
@@ -105,6 +107,7 @@ class Goals extends React.Component {
             <span className="load-text">LOADING</span>
           </div>
         </div>
+
         )
       } else { 
         let goalsToDisplay = "";
