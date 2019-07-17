@@ -16,7 +16,7 @@ const NavBar = (props) => (
             autoLoad={true}
             callback={props.onLogin}
           >
-      Sign in with Facebook
+    
           </FacebookLogin>
       )}
   
