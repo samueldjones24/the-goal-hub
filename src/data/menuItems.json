@@ -1,0 +1,16 @@
+{
+  "data" : [
+    {
+      "children": [
+        {
+          "name": "Home",
+          "url": "/"
+        },
+        {
+          "name": "Categories",
+          "url": "/categories"
+        }
+      ]
+    }
+  ]
+}

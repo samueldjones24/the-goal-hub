@@ -1,0 +1,129 @@
+@media only screen and (max-width: 415px) {
+.goal-card {
+	height: 10%;
+	display: flex;
+	flex-direction: row;
+	align-content: space-between;
+	align-items: center;
+	padding: 10px;
+	margin: 5px;
+	background: rgb(243, 239, 239);
+	border-radius: 10px;
+	width: 90%;
+}
+
+.goal-card .rank{
+	padding: 10px 10px 10px 5px;
+	font: normal 900 30px 'Anton', serif; 
+	color: rgb(6, 6, 235);
+	margin-right: 0px;
+	max-width: 20px;
+}
+
+.goal-card .video{
+	margin-left: 10px; 
+	cursor: pointer;
+}
+
+.goal-card .title	 {
+	color: rgb(0, 0, 0);
+	text-align: center;
+	padding-left: 10px;
+	font: normal bold 13px 'Zilla Slab', serif; 
+	padding-right: 10px;
+}
+
+.likes-wrapper {
+	margin-left: auto;
+}
+
+.likes-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.thumbs-up-icon {
+	padding-right: 5px;
+	color: rgb(6, 6, 235);
+	size: 40px;
+}	
+
+.thumbs-up-icon:hover {
+	color: blue;
+	font-size: 120%;
+	cursor: pointer;
+}	
+}
+
+@media only screen and (min-width: 416px) {
+	.goal-card {
+		height: 10%;
+		width: 50%;
+		display: flex;
+		flex-direction: row;
+		align-content: space-between;
+		align-items: center;
+		padding: 10px;
+		margin: 5px;
+		background: rgb(243, 239, 239);
+		border-radius: 10px;
+	}
+	
+	.goal-card .rank{
+		padding: 10px 30px 10px 5px;
+		font: normal 900 30px 'Anton', serif; 
+		color: rgb(6, 6, 235);
+		margin-right: 0px;
+		max-width: 20px;
+	}
+	
+	.goal-card .video{
+		margin-left: 10px; 
+		cursor: pointer;
+	}
+	
+	.goal-card .title	 {
+		color: rgb(0, 0, 0);
+		text-align: center;
+		padding-left: 30px;
+		font: normal bold 20px 'Zilla Slab', serif; 
+		padding-right: 20px;
+	}
+	
+	.likes-wrapper {
+		margin-left: auto;
+		padding-right: 20px;
+	}
+	
+	.likes-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	.thumbs-up-icon {
+		padding-right: 5px;
+		color: rgb(6, 6, 235);
+		size: 40px;
+		display: grid;
+	}	
+	
+	.thumbs-up-icon:hover {
+		color: blue;
+		font-size: 120%;
+		cursor: pointer;
+	}	
+	}
+
+	.shareButtons {
+		display: grid;
+
+	}
+
+	.Buttons {
+		margin-left: auto;
+	}
+	
