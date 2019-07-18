@@ -108,6 +108,7 @@
 		padding-right: 5px;
 		color: rgb(6, 6, 235);
 		size: 40px;
+		display: grid;
 	}	
 	
 	.thumbs-up-icon:hover {
@@ -115,4 +116,13 @@
 		font-size: 120%;
 		cursor: pointer;
 	}	
+	}
+
+	.shareButtons {
+		display: grid;
+
+	}
+
+	.Buttons {
+		margin-left: auto;
 	}

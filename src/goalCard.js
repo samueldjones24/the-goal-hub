@@ -30,14 +30,11 @@ const GoalCard = (props) => (
 
 <span className="rank">{props.rank}</span>
 	      <img className="video" data-video={props.goal.id} alt="PLAY" width="80" height="65" src={props.thumbnail}></img>
-        <span className="title">{toTitleCase(props.goal.snippet.title).substring(0,30)}...</span>
-	      <div className="likes-wrapper">
-	        <GoalLikes
-	        userLikes={props.goal.statistics.likeCount}
-	        />
-	      </div>
-	  
-<span>
+        <span className="title">{toTitleCase(props.goal.snippet.title).substring(0,25)}...</span>
+	        
+          <div className="Buttons">
+	      <div className="shareButtons">
+<span >
   <FacebookShareButton
   url={`https://www.youtube.com/watch?v=${props.goal.id}`}
   quote='Checkout this goal I saw on The GoalHub!'
@@ -57,7 +54,13 @@ const GoalCard = (props) => (
           round />
       </TwitterShareButton>
     </span>
-  
+    <span className="likes-wrapper">
+    <GoalLikes
+	        userLikes={props.goal.statistics.likeCount}
+	        />
+    </span>
+  </div>
+  </div>
   </div>
   );
 
