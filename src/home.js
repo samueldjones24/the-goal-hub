@@ -5,17 +5,19 @@ import './styles/App.css';
 
 const soccerImage = "https://koditips.com/wp-content/uploads/european-football-soccer-kodi.png";
 
-const Home = (props) => (
+const Home = () => (
     <div className="App bg">
       <header className="App-header">
       <Link to="/categories">
         <div className="enter-site">
           <img src={soccerImage} alt="soccer-ball" />
-          <span>The Goal Show</span>
+          <span>The Goal Hub</span>
         </div>
         </Link>
           <h1>
-          Pick your goal of the month from all the top leagues!<br />
+            <br />
+         Only the best goals will do.<br />
+         Watch them all here.<br />
           </h1>
       </header>
       
