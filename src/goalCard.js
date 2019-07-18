@@ -2,21 +2,6 @@ import React from 'react';
 import './styles/goalCard.css';
 import './videoPlayer.js'
 import GoalLikes from './goal-details';
-import { FacebookShareButton,
-  TwitterShareButton, 
-  } from 'react-share';
-
-  import {
-    FacebookIcon,
-    TwitterIcon,
-
-  } from 'react-share';
-
-
-
-const shareUrl = 'https://www.youtube.com/channel/UCEg25rdRZXg32iwai6N6l0w'
-
-
 
 import { FacebookShareButton,
   TwitterShareButton, 
@@ -29,11 +14,7 @@ import { FacebookShareButton,
 
   } from 'react-share';
 
-
-
-const shareUrl = 'https://www.youtube.com/channel/UCEg25rdRZXg32iwai6N6l0w'
-
-
+// const shareUrl = 
 
 function toTitleCase(str) {
   return str.replace(
@@ -55,10 +36,12 @@ const GoalCard = (props) => (
 	        userLikes={props.goal.statistics.likeCount}
 	        />
 	      </div>
-
+	  
 <span>
   <FacebookShareButton
-  url={shareUrl}>
+  url={`https://www.youtube.com/watch?v=${props.goal.id}`}
+  quote='Checkout this goal I saw on The GoalHub!'
+  >
   <FacebookIcon
   size={20}
   round />
@@ -66,7 +49,8 @@ const GoalCard = (props) => (
 </span>
     <span>
     <TwitterShareButton
-        url={shareUrl}
+        url={`https://www.youtube.com/watch?v=${props.goal.id}`}
+        title='Checkout this goal I saw on The GoalHub!'
         >
         <TwitterIcon
           size={20}
